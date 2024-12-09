@@ -3,29 +3,64 @@
     margin: 0px;
     padding: 0px;
 }
-
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: 'Open Calibri';
 }
-
+html {
+    background-color: #FFFFFF;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+nav{
+    z-index: 100;
+    color: #cfcccc;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #cfcccc;
+    line-height: 60px;
+    width: 100%;
+}
 .wrapper {
     width: 1100px;
     margin: auto;
     position: relative;
 }
 
-.logo a {
+.logo a{
     font-size: 50px;
-    font-weight: 800;
+    font-weight: 700;
     float: left;
-    font-family: courier;
-    color: #608BC1;
+    font-family:'Open Calibri';
+    color: #72a3df;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+nav.putih {
+   background-color: #cfcccc; 
+}
+nav .logo img {
+    vertical-align: middle;
+    width: 120px;
 }
 
 .menu {
+    width: 300px;
+    float: left;
+    height: 70px;
+}
+
+ul{
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -40,7 +75,6 @@ nav {
     z-index: 1;
     border-bottom: 1px solid #608BC1;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -59,9 +93,43 @@ nav ul li a {
     padding: 0px 16px 0px 16px;
     text-decoration: none;
 }
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
 
-nav ul li a:hover {
-    text-decoration: underline;
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #133E87;
+    margin-top: 11px;
+    color: #050505;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+}
+
+.btn{
+    background: #133E87;
+    border: 2px solid #608BC1;
+    margin-top: 13px;
+    color: #cfcccc;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btn: :focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
 }
 
 section {
@@ -125,18 +193,6 @@ a.tbl-pink:hover {
 p{
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
-}
-
-.tengah {
-    text-align: center;
-    width: 100%;
-}
-
-.tutor-list {
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .kartu-tutor {
